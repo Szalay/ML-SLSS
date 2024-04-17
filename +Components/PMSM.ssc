@@ -1,0 +1,104 @@
+import foundation.electrical.electrical;
+import foundation.mechanical.rotational.rotational;
+
+component PMSM
+	% PMSM
+	%	PMSM model with quadratic flux-current function
+
+	nodes
+		a = electrical;	% a:left
+		b = electrical;	% b:left
+		c = electrical;	% c:left
+		
+		S = rotational;	% R:right
+	end
+
+	nodes (Access=protected, ExternalAccess=none)
+		n = electrical;
+	end
+	
+	parameters
+		R = {0.55, 'Ohm'};				% Resistance
+		z_P = {2, '1'};					% Number of pole-pairs
+		Psi_PM = {0.02483, 'Wb'};		% Permanent magnet flux-linkage
+		L_dd = {158e-6, 'H'};			% D-direction inductance
+		L_qq = {182e-6, 'H'};			% Q-direction inductance
+
+		Gamma_0 = {0.125e-6, 'H/A'};	% Polarity-dependent saliency coefficient
+		
+		J = {2e-7, 'kg*m^2'};			% Rotor inertia
+		B = {6.329e-3, '(N*m*s)/rad'};	% Rotor damping
+		
+		th_M0 = {0, 'rad'};				% Initial mechanical rotor position
+	end
+	
+	variables
+		u_a = {0, 'V'};
+		u_b = {0, 'V'};
+		u_c = {0, 'V'};
+		
+		i_a = {0, 'A'};
+		i_b = {0, 'A'};
+		i_c = {0, 'A'};
+		i_n = {0, 'A'};
+
+		Psi_d = {0, 'Wb'};
+		Psi_q = {0, 'Wb'};
+		
+		u_d = {0, 'V'};
+		u_q = {0, 'V'};
+		i_d = {value = {0, 'A'}, priority = priority.high};
+		i_q = {value = {0, 'A'}, priority = priority.high};
+		
+		M_E = {0, 'N*m'};
+		M_L = {0, 'N*m'};
+		
+		w_M = {0, 'rad/s'};
+		w = {0, 'rad/s'};
+	end
+	
+	variables (ExternalAccess=observe)
+		th = z_P*th_M0;
+		th_M = th_M0;
+	end
+	
+	branches
+		i_a : a.i -> n.i;
+		i_b : b.i -> n.i;
+		i_c : c.i -> n.i;
+		i_n : n.i -> *;
+		
+		M_L : * -> S.t;
+	end
+	
+	equations
+		u_a == a.v - n.v;
+		u_b == b.v - n.v;
+		u_c == c.v - n.v;
+		
+		Psi_d == Psi_PM + L_dd*i_d - 9/8*Gamma_0*i_d^2 - 3/8*Gamma_0*i_q^2;
+		Psi_q == L_qq*i_q - 3/4*Gamma_0*i_d*i_q;
+		
+		u_d == R*i_d + Psi_d.der - w*Psi_q;
+		u_q == R*i_q + Psi_q.der + w*Psi_d;
+		
+		u_d ==  2/3*u_a*cos(th) + 2/3*u_b*cos(th - 2*pi/3) + 2/3*u_c*cos(th - 4*pi/3);
+		u_q == -2/3*u_a*sin(th) - 2/3*u_b*sin(th - 2*pi/3) - 2/3*u_c*sin(th - 4*pi/3);
+		
+		i_a == i_d*cos(th) - i_q*sin(th);
+		i_b == i_d*cos(th - 2*pi/3) - i_q*sin(th - 2*pi/3);
+		i_c == i_d*cos(th - 4*pi/3) - i_q*sin(th - 4*pi/3);
+		i_n == n.v/(1e9*R);
+		
+		M_E == 3/2*z_P*(Psi_d*i_q - Psi_q*i_d);
+
+		J*w_M.der == M_E - B*w_M - M_L;
+		
+		w_M == S.w;
+		th_M.der == w_M;
+		
+		w == z_P*w_M;
+		th == z_P*th_M;
+	end
+
+end

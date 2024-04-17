@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="PMSM" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 121 121" style="enable-background:new 0 0 121 121;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{display:none;fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#231F20;stroke-miterlimit:10;}
+	.st3{clip-path:url(#SVGID_00000157284813735035399420000010976426892165755061_);}
+	.st4{fill:none;stroke:#000000;}
+	.st5{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#000000;stroke-linecap:square;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st8{fill:#FFFFFF;stroke:#000000;}
+	.st9{font-family:'ArialMT';}
+	.st10{font-size:18px;}
+	.st11{display:none;fill:none;stroke:#000000;}
+</style>
+<polygon id="Körvonal" class="st0" points="0,0 60.5,0 121,0 121,60.5 121,121 60.5,121 0,121 0,60.5 "/>
+<polyline class="st1" points="0,0 60.5,60.5 121,121 "/>
+<polyline class="st1" points="0,121 60.5,60.5 121,0 "/>
+<g id="Motor_3F_1_">
+	<polyline class="st2" points="40.5,101.5 60.5,60.5 80.5,101.5 	"/>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="29.5" y="101.5" width="62" height="8"/>
+		</defs>
+		<clipPath id="SVGID_00000108290786389775818360000007777251778450689980_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="clip-path:url(#SVGID_00000108290786389775818360000007777251778450689980_);">
+			<line class="st4" x1="79" y1="101.5" x2="90" y2="112.5"/>
+			<line class="st4" x1="88" y1="101.5" x2="99" y2="112.5"/>
+			<line class="st4" x1="70" y1="101.5" x2="81" y2="112.5"/>
+			<line class="st4" x1="61" y1="101.5" x2="72" y2="112.5"/>
+			<line class="st4" x1="52" y1="101.5" x2="63" y2="112.5"/>
+			<line class="st4" x1="43" y1="101.5" x2="54" y2="112.5"/>
+			<line class="st4" x1="34" y1="101.5" x2="45" y2="112.5"/>
+			<line class="st4" x1="25" y1="101.5" x2="36" y2="112.5"/>
+		</g>
+	</g>
+	<line class="st5" x1="29.5" y1="101.5" x2="91.5" y2="101.5"/>
+</g>
+<g>
+	<g id="Tengely_1_">
+		<line class="st6" x1="102.5" y1="60.5" x2="121" y2="60.5"/>
+	</g>
+	<polygon points="104,74 95,74 95,71 101,71 101,50 95,50 95,47 104,47 	"/>
+	<g id="Kivezetések">
+		<line class="st7" x1="60.5" y1="60.5" x2="0" y2="60.5"/>
+		<polyline class="st7" points="60.5,60.5 10.1,19.8 0,19.8 		"/>
+		<polyline class="st7" points="60.5,60.5 10.1,101.2 0,101.2 		"/>
+	</g>
+	<circle id="Kör_89_" class="st8" cx="60.5" cy="60.5" r="32"/>
+	<text transform="matrix(1 0 0 1 47 56.5)" class="st9 st10">SM</text>
+	<g id="Kapcsolás">
+		<line id="Vezeték_241_" class="st4" x1="60.2" y1="71.4" x2="60.2" y2="84.2"/>
+		<line id="Vezeték_244_" class="st11" x1="60.2" y1="71.4" x2="73" y2="71.4"/>
+		<line id="Vezeték_242_" class="st4" x1="60.2" y1="71.4" x2="71.3" y2="65"/>
+		<line id="Vezeték_243_" class="st4" x1="60.2" y1="71.4" x2="49.1" y2="65"/>
+		<circle id="Csomópont_73_" cx="60.2" cy="71.4" r="3.8"/>
+	</g>
+</g>
+</svg>

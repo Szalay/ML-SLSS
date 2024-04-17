@@ -30,11 +30,59 @@
         <File Location=".gitignore">
             <Info/>
         </File>
-        <File Location="README.md">
-            <Info/>
-        </File>
         <File Location=".gitattributes">
             <Info/>
+        </File>
+        <File Location="PMSM_Sinusoidal.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="PMSM_SquareWave.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="MeasurementData.mat">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="Conversion.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="SLSS.slx">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="+Components">
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="PMSM.ssc">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <Info/>
+            <File Location="PMSM.svg">
+                <Info/>
+            </File>
         </File>
     </Files>
     <Info Location="ProjectData">
