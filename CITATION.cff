@@ -43,19 +43,3 @@ preferred-citation:
   location: 
     name: "Pilsen, Czech Republic"
   year: 2024
-
-
-
-
-@INPROCEEDINGS{
-  booktitle={}, 
-  title={}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={1-8},
-  keywords={},
-  doi={}}
-
-
-
