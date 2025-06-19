@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+title: >-
+  Simscape Implementation of a Nonlinear Permanent Magnet Synchronous Machine Model for Sensorless Polarity Detection
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: István
+    family-names: Szalay
+  - given-names: Dénes
+    family-names: Fodor
+identifiers:
+  - type: doi
+    value: 10.1109/PEMC61721.2024.10726332
+preferred-citation:
+  type: conference-paper
+  title: "Simscape Implementation of a Nonlinear Permanent Magnet Synchronous Machine Model for Sensorless Polarity Detection"
+  authors:
+  - family-names: "Szalay"
+    given-names: "István"
+  - family-names: "Fodor"
+    given-names: "Dénes"
+  doi: "10.1109/PEMC61721.2024.10726332"
+  collection-title: "2024 IEEE 21st International Power Electronics and Motion Control Conference (PEMC)"
+  isbn: 979-8-3503-8523-6
+  issn: 2473-0165
+  keywords:
+  - Software packages
+  - Simulation
+  - Source coding
+  - Rotors
+  - Sensorless control
+  - Mathematical models
+  - Data models
+  - Numerical models
+  - Integrated circuit modeling
+  - Software development management
+  - permanent magnet synchronous machine
+  - sensorless control
+  - initial position and polarity detection
+  - Simscape
+  - acausal modeling
+  location: 
+    name: "Pilsen, Czech Republic"
+  year: 2024
+
+
+
+
+@INPROCEEDINGS{
+  booktitle={}, 
+  title={}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={},
+  doi={}}
+
+
+
