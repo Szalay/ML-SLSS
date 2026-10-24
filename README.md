@@ -1,4 +1,5 @@
 # ML-SLSS
+Quadratic PMSM model implementation in Simscape for sensorless polarity detection.
 Extended PMSM model and additional files for my PEMC 2024 article.
 
 The important files in the repository are the following.
